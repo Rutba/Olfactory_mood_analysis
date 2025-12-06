@@ -97,20 +97,29 @@ This project supports a computational olfaction research project by doing the fo
   This lets you analyze how chemistry predicts perception.
 ### 2. Preparing Data for Statistical Modeling
   The pipeline sets up:
+    
     * clean data
     * standardized variables
     * PCA-reduced chemical features
+
 Needed for valid regression, machine learning, or predictive modeling.
 ### 3. Exploratory Data Analysis
-      * Histogram of pleasantness
-      * Scatterplot: intensity vs pleasantness
-      * Correlation matrix of z-scores
+
+    * Histogram of pleasantness
+      
+    * Scatterplot: intensity vs pleasantness
+      
+    * Correlation matrix of z-scores
 ### 4. Predicting pleasantness from other variables
-      The final regression models:
-      ** `pleasantness_z ~ intensity_z + familiarity_z + chemical PC1 + sex + age`** 
-      This tests how intensity, familiarity, chemical features (PC1), sex, age predict  pleasantness ratings.
-          * What makes an odor pleasant?
-          * Do demographics matter?
-          * Do chemical features directly predict pleasure?
+  The final regression models:
+  
+    ** `pleasantness_z ~ intensity_z + familiarity_z + chemical PC1 + sex + age`** 
+    
+    This tests how intensity, familiarity, chemical features (PC1), sex, age predict  pleasantness ratings.
+      * What makes an odor pleasant?
+      
+      * Do demographics matter?
+      
+      * Do chemical features directly predict pleasure?
           
       This is central to olfactory science. Writes output to model_summary.txt
