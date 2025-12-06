@@ -108,8 +108,8 @@ This project supports a computational olfaction research project by doing the fo
         * Correlation matrix of z-scores
   ### 3. Predicting pleasantness from other variables
       The final regression models:
+          **pleasantness\_z ~ intensity\_z + familiarity\_z + chemical PC1 + sex + age**
       
-         **pleasantness_z ~ intensity_z + familiarity_z + chemical PC1 + sex + age**
         This tests how intensity, familiarity, chemical features (PC1), sex, age predict  pleasantness ratings.
           * What makes an odor pleasant?
           * Do demographics matter?
