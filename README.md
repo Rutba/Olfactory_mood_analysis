@@ -108,7 +108,8 @@ Needed for valid regression, machine learning, or predictive modeling.
   * Correlation matrix of z-scores
 ### 4. Predicting pleasantness from other variables
 The final regression models:
-  ** `pleasantness_z ~ intensity_z + familiarity_z + chemical PC1 + sex + age`** 
+
+** `pleasantness_z ~ intensity_z + familiarity_z + chemical PC1 + sex + age`** 
     
 This tests how intensity, familiarity, chemical features (PC1), sex, age predict  pleasantness ratings.
 * What makes an odor pleasant?
