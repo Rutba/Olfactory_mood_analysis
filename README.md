@@ -25,13 +25,17 @@ In this project dataset (data.xlsx) is participant-level behavior ratings (e.g.,
   Function: modify_stimuli()
   ### Modifications Performed:
   1. Reset and rename index → molecule_id
-    * Ensures a consistent key for merging datasets.
+
+     * Ensures a consistent key for merging datasets.
   2.Merge molecules with behavior descriptors
-    * Combines chemistry + descriptive labels.
+
+     * Combines chemistry + descriptive labels.
   3. Detect SMILES column automatically
-    * Removes rows missing chemical structures.
-  4. Drop duplicate molecules
-    * Ensures one molecule = one unique stimulus.
+
+     * Removes rows missing chemical structures.
+  5. Drop duplicate molecules
+
+     * Ensures one molecule = one unique stimulus.
 ### Why?
 To create a clean, unified stimulus table containing:
   * molecular information
@@ -42,12 +46,15 @@ This ensures merging with participant behavioral data works smoothly.
 Function: modify_behavior()
 ### Modifications Performed:
   1. Rename molcode or odor_id → molecule_id
-    * Standardizes the merge key.
-  2. Select rating column
-    * Prefers 'pleasant'.
-    * If missing, uses the first numeric column (failsafe).
-  3. Drop rows missing ratings
-    * Ensures valid dependent variables for analysis.
+
+     * Standardizes the merge key.
+  3. Select rating column
+
+     * Prefers 'pleasant'.
+     * If missing, uses the first numeric column (failsafe).
+  5. Drop rows missing ratings
+
+      * Ensures valid dependent variables for analysis.
 ### Why?
 Participant data from experiments must be aligned with stimulus IDs and must have complete ratings.
 ### C. Behavior + Stimuli Merge
@@ -73,6 +80,7 @@ This is the core dataset for modeling
     * familiarity
  2. Scale molecular descriptors (columns starting with descriptor_)
  3. PCA on molecular descriptors → PC1 & PC2
+
     * Reduces complex chemical structure info to 2 dimensions.
 ### Why?
 To stabilize regression modeling and remove scale differences.
