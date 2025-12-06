@@ -1,4 +1,5 @@
 # Olfactory_mood_analysis
+Unlike traditional behavioral or machine learning projects that focus exclusively on either sensory perception or molecular data, this research uniquely integrates chemical, perceptual, and behavioral dimensions of olfactory processing. By combining odor molecule descriptors with human ratings of pleasantness, intensity, and familiarity, the project constructs a computational bridge between physical chemical structure and subjective emotional response
 ## Dataset Description
 Used real olfactory datasets from the Pyrfume Project, which compiles validated chemical + perceptual data.
 The two datasets:
