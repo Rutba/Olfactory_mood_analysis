@@ -38,3 +38,29 @@ To create a clean, unified stimulus table containing:
   * behavior descriptors
   * unique standard identifiers
 This ensures merging with participant behavioral data works smoothly.
+### B. Behavioral Dataset Modifications
+Function: modify_behavior()
+### Modifications Performed:
+  1. Rename molcode or odor_id → molecule_id
+    * Standardizes the merge key.
+  2. Select rating column
+    * Prefers 'pleasant'.
+    * If missing, uses the first numeric column (failsafe).
+  3. Drop rows missing ratings
+    * Ensures valid dependent variables for analysis.
+### Why?
+Participant data from experiments must be aligned with stimulus IDs and must have complete ratings.
+### C. Behavior + Stimuli Merge
+Function: merger_behavior_stimuli()
+### Modifications Performed:
+  1. Unifies molecule_id types (string)
+  2. Full merge of participant ratings with molecule features
+  3. Drop rows missing SMILES (invalid chemucal structures)
+### Why?
+To produce a dataset where each row = participant* molecule, including
+  * chemical features
+  * molecular descriptors
+  * participant ratings
+  * 
+This is the core dataset for modeling
+
