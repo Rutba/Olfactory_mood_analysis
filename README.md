@@ -128,9 +128,7 @@ It learns:
 
 ✔ What chemical patterns produce certain perceptions
 
-Then it compares a patient's responses to these predicted patterns.
-
-If their ratings don’t match the expected perception, this can signal:
+This learning can be used to compare a patient's responses to these predicted patterns.If their ratings don’t match the expected perception, this can signal:
 
 * early neurological decline
 
