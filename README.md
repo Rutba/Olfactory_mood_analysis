@@ -119,3 +119,20 @@ This tests how intensity, familiarity, chemical features (PC1), sex, age predict
 * Do chemical features directly predict pleasure?
 
 This is central to olfactory science. Writes output to model_summary.txt
+## USE CASE:
+it learns:
+✔ What odors should smell like to a healthy person
+✔ How pleasant, intense, or familiar each molecule typically is
+✔ What chemical patterns produce certain perceptions
+
+Then it compares a patient's responses to these predicted patterns.
+
+If their ratings don’t match the expected perception, this can signal:
+
+* early neurological decline
+
+* smell loss from infection
+
+* disease progression
+
+* need for further medical evaluation
